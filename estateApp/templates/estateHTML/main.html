@@ -1,0 +1,63 @@
+{% load static %}
+<html>
+
+<head>
+    
+    <title>Real Estate</title>
+    
+    <link rel="stylesheet" href="{% static 'estateImages\stylehome.css' %}">
+
+</head>
+
+<body>
+    
+    <div class="banner">
+        
+        <div class="navbar">
+            
+            <a href="{% url 'index'  %}"><img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo"></a>
+            
+                   
+                <ul>
+                
+                        <li><img src="{% static 'estateImages\Images\test_account_50px.png' %}" alt=""></a></li>
+                </ul>
+
+       </div>     
+            <div class="grid-container">
+               
+                <div class="grid1">
+                    <img  src= "{% static 'estateImages\Images\house1.webp' %}" class="img" alt="logo">
+                    <a href="">Abidjan Cocody Riviera Golf 4 Superficie, <br>Côte d'Ivoire</a>
+                    <button type="submit"><span></span>Voir Plus</button>
+                
+                </div>
+
+                <div class="grid2">
+                    <img  src= "{% static 'estateImages\Images\house2.jpg' %}" class="img" alt="logo">
+                    <a href="">Abidjan, Cocody riviera palmeraie, <br>Côte d'Ivoire</a>
+                    <button type="submit"><span></span>Voir Plus</button>
+                    
+                </div>
+
+                <div class="grid3">
+                    <img src= "{% static 'estateImages\Images\house3.jpeg' %}" class="img" alt="logo">
+                    <br>
+                    <a href="">Attoban doraville, Abidjan, <br>Côte d'Ivoire</a>
+                    <button type="submit"><span></span>Voir Plus</button>
+                </div>
+
+                <div class="grid4">
+                    <img src= "{% static 'estateImages\Images\house4.jpg' %}" class="img" alt="logo">
+                    <a href="">Deux plateaux vallon, Abidjan, Lagunes, <br>Côte d'Ivoire</a>
+                    <button type="submit"><span></span>Voir Plus</button>
+                </div> 
+            
+            </div>
+            
+
+            
+
+        
+        
+</html>

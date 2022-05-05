@@ -15,29 +15,22 @@
         
         <div class="navbar">
             
-            <img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo">
-                
-            <ul>
-                    <li><a href="">Home</a></li>
-                    
-                    <li><a href="">Gallery</a></li>
-                    
-                    <li><a href="">Contact</a></li>
-            </ul>
+            <a href="{% url 'index'  %}"><img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo"></a>
+
         
         </div>
         
         <div class="content">
 
-            <h1>Trouvez la maison de vos rêves</h1>
+            <h1>Vous cherchez une maison</h1>
 
-            <p>Le meilleur moment pour acheter une maison, c'est maintenant</p>
+            <p>Le meilleur moment pour trouver une maison, c'est maintenant</p>
 
             <div>
                 
-                <button type="submit"><span></span>Sign Up</button>
+                <a href="{% url 'signup'  %}"><button type="submit"><span></span>Se inscrire</button></a>
                 
-                <button type="submit"><span></span>Log In</button>
+                <a href="{% url 'login'  %}"><button type="submit"><span></span>Se connecter</button></a>
             
             </div>
         

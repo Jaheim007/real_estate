@@ -4,10 +4,100 @@
     font-family: sans-serif;
 }
 
+
+
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(rgba(0,0,0,75), rgba(0,0,0,0.65)), url("Images/bedroomdesign.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.signup{
+    margin: 5px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    color: #fff;
+    background-color: #009688;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    
+}
+
+.signup h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: underline;
+    
+    
+}
+
+.signup p {
+    font-size: 16px;
+    margin: 15px 0px 15px;
+}
+
+.signup input{
+    font-size: 16px;
+    width: 75%;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.signup button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 20%;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.signup span{
+    background: #000080;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.signup button:hover span{
+    width: 100%;
+}
+
+.signup button:hover{
+    border: none;
 }

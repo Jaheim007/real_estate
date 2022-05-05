@@ -5,7 +5,7 @@
     
     <title>Real Estate</title>
     
-    <link rel="stylesheet" href="{% static 'estateImages\styleLog.css' %}">
+    <link rel="stylesheet" href="{% static 'estateImages\stylesignup.css' %}">
 
 </head>
 
@@ -14,7 +14,24 @@
         
         <div class="navbar">
             
-            <img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo">
+            <a href="{% url 'index'  %}"><img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo"></a>
+           
+           
+            <div class="signup">
+                <h1>S'inscrire</h1>
+                
+                <form method="post">
+                 
+                    {% csrf_token %}
+                    
+                    {{ form.as_p }}
+                   
+                    <button type="submit" ><span></span>Se inscrire</button>
+                
+                </form>
+
+            </div>
+           
         
         </div>        
     

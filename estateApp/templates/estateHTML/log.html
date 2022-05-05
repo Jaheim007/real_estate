@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <html lang="en">
 
 <head>
@@ -14,8 +14,21 @@
         
         <div class="navbar">
             
-            <img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo">
-        
+            <a href="{% url 'index'  %}"><img class="logo" src= "{% static 'estateImages\Images\LogoMakr-3jrS4H.png' %}" alt="logo"></a>
+            
+            <div class="login">
+                
+                <h1>Connexion</h1>
+                <form action="" method="post">
+                    
+                    {{form.as_p}}
+                    
+                    {% csrf_token %}
+                    
+                    <button type="submit"><span></span>Se connecter</button>
+
+                </form>
+            </div>
         </div>        
     
     </div>        
